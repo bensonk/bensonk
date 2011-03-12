@@ -1,0 +1,7 @@
+== Benson's Website ==
+
+This app is designed to act as a personal home on the web.  My motivation in
+creating it is primarily to make it easy to update from my phone on the road as
+I continue on a long bike trip.  Since I'll be looking for work as we finish
+the trip, I'm hoping to make it easy to see what I'm about and why I might be
+an interesting job candidate. 
