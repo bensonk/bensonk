@@ -1,4 +1,4 @@
-== Benson's Website ==
+h2. Benson's Website
 
 This app is designed to act as a personal home on the web.  My motivation in
 creating it is primarily to make it easy to update from my phone on the road as
