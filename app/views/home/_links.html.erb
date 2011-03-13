@@ -1,0 +1,8 @@
+<div id="links">
+  <ul>
+    <%= render :partial => 'link', :collection => @networks[0..@networks.length / 2 ] %>
+    <br/>
+    <%= render :partial => 'link', :collection => @networks[@networks.length / 2 + 1 .. @networks.length] %>
+  </ul>
+</div>
+

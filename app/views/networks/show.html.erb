@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @network.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @network.url %>
+</p>
+
+<p>
+  <b>Icon url:</b>
+  <%= image_tag @network.icon_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_network_path(@network) %> |
+<%= link_to 'Back', networks_path %>
