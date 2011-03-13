@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @blurb.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @blurb.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_blurb_path(@blurb) %> |
+<%= link_to 'Back', blurbs_path %>

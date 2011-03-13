@@ -1,11 +1,11 @@
-<div id="content">
-  <a href="http://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_green_007200.png&path=" alt="Fork me on GitHub"></a>
-  <h1>Benson Kalahar</h1>
+<a href="http://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_green_007200.png&path=" alt="Fork me on GitHub"></a>
+<h1>Benson Kalahar</h1>
 
-  <%= render :partial => 'links' %>
+<%= render :partial => 'links' %>
 
-  <div id="about">
-    <h3>About</h3>
-    <p>I like to solve problems, make cool things, and write software.  Preferably all at once. </p>
+<% @blurbs.each do |blurb| %>
+  <div id="<%= blurb.title.parameterize %>">
+    <h3><%= blurb.title %></h3>
+    <%= textilize(blurb.body).html_safe %>
   </div>
-</div>
+<% end %>

@@ -1,4 +1,6 @@
 Bensonk::Application.routes.draw do
+  resources :blurbs
+
   resources :networks
 
   # The priority is based upon order of creation:
