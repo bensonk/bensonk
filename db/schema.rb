@@ -27,13 +27,4 @@ ActiveRecord::Schema.define(:version => 20110313052954) do
     t.datetime "updated_at"
   end
 
-  create_table "outgoing_links", :force => true do |t|
-    t.string   "name"
-    t.string   "url"
-    t.integer  "precedence", :default => 0
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "icon_url"
-  end
-
 end
