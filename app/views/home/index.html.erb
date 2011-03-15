@@ -3,9 +3,4 @@
 
 <%= render :partial => 'links' %>
 
-<% @blurbs.each do |blurb| %>
-  <div id="<%= blurb.title.parameterize %>">
-    <h3><%= blurb.title %></h3>
-    <%= textilize(blurb.body).html_safe %>
-  </div>
-<% end %>
+<%= render :partial => 'blurb', :collection => @blurbs %>

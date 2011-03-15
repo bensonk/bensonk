@@ -49,8 +49,12 @@ Bensonk::Application.routes.draw do
   #     resources :products
   #   end
 
+  # Omniauth routes for great justice!
+  match '/auth/:provider/callback', :to => 'sessions#create'
+
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
+  #
   root :to => "home#index"
 
   # See how all your routes lay out with "rake routes"

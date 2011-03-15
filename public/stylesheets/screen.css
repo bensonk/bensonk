@@ -56,3 +56,9 @@ div#links ul li {
   list-style-type: none;
   margin: 2px;
 }
+div#auth {
+  float: left;
+  text-color: white;
+}
+div#login_options { list-style-type: none; }
+div#notice { float: center; }

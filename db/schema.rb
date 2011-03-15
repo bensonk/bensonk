@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110313052954) do
+ActiveRecord::Schema.define(:version => 20110314215250) do
+
+  create_table "authorizations", :force => true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "blurbs", :force => true do |t|
     t.string   "title"
@@ -23,6 +31,21 @@ ActiveRecord::Schema.define(:version => 20110313052954) do
     t.string   "name"
     t.string   "url"
     t.string   "icon_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "outgoing_links", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.integer  "precedence", :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "icon_url"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
