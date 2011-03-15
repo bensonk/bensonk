@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 h1#main {
   font-size: 250%;
   text-align: center;
+  clear: both;
   text-shadow: -1px 2px 3px #333333;
   -moz-text-shadow: -1px 2px 3px #333333;
   -webkit-text-shadow: -1px 2px 3px #333333;
@@ -59,7 +60,9 @@ div#links ul li {
   list-style-type: none;
   margin: 2px;
 }
-div#auth { float: left; }
-div#nav { float: right; }
+div#auth, div#nav {
+  clear: both;
+  float: right;
+}
 div#login_options { list-style-type: none; }
 div#notice { float: center; }

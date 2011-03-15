@@ -1,0 +1,4 @@
+<div id="auth">
+  <%= current_user.name %> |
+  <%= link_to "log out", :controller => :sessions, :action => :destroy %>
+</div>
