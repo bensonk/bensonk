@@ -1,4 +1,6 @@
 class NetworksController < ApplicationController
+  before_filter :must_be_admin
+
   # GET /networks
   # GET /networks.xml
   def index

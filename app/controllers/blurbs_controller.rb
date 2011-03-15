@@ -1,4 +1,6 @@
 class BlurbsController < ApplicationController
+  before_filter :must_be_admin
+
   # GET /blurbs
   # GET /blurbs.xml
   def index

@@ -22,4 +22,12 @@ class ApplicationController < ActionController::Base
     @current_user = nil
     session[:user_id] = nil
   end
+
+  def must_be_admin
+    unless current_user and current_user.admin?
+      session[:redirect_target] = request.fullpath
+      flash[:error] = "You must be an admin to do that."
+      redirect_to :controller => :sessions, :action => :twitter
+    end
+  end
 end

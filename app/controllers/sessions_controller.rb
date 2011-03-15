@@ -11,21 +11,27 @@ class SessionsController < ApplicationController
     self.current_user = @auth.user
 
     flash[:notice] = "Welcome, #{current_user.name}"
-    redirect_home
+    do_redirect
   end
 
   def destroy
     self.logout
     flash[:notice] = "You are logged out."
-    redirect_home
+    do_redirect
   end
 
-  def new
-    # TODO
+  def twitter
+    session[:redirect_target] = request.referer unless session[:redirect_target]
+    redirect_to :controller => :auth, :action => :twitter
   end
 
   private
-  def redirect_home
-    redirect_to :controller => :home, :action => :index
+  def do_redirect
+    if session[:redirect_target]
+      redirect_to session[:redirect_target]
+      session[:redirect_target] = nil
+    else
+      redirect_to :controller => :home, :action => :index
+    end
   end
 end
