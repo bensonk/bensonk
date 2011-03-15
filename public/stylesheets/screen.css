@@ -21,20 +21,16 @@ a {
 a:hover {
   color: #3366bb;
   text-shadow: -1px 1px 2px #222222;
-  -moz-text-shadow: -1px 1px 2px #222222;
-  -webkit-text-shadow: -1px 1px 2px #222222;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-size: 150%;
+  text-shadow: -1px 2px 3px #333333;
 }
 h1#main {
   font-size: 250%;
   text-align: center;
   clear: both;
-  text-shadow: -1px 2px 3px #333333;
-  -moz-text-shadow: -1px 2px 3px #333333;
-  -webkit-text-shadow: -1px 2px 3px #333333;
+  text-shadow: -1px 1px 5px #333333;
 }
 div#content {
   border-radius: 25px 25px 0 0;
@@ -66,3 +62,4 @@ div#auth, div#nav {
 }
 div#login_options { list-style-type: none; }
 div#notice { float: center; }
+div.blurb { padding: 1em; }

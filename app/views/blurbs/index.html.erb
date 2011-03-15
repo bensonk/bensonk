@@ -1,25 +1,5 @@
 <h1>Listing blurbs</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @blurbs.each do |blurb| %>
-  <tr>
-    <td><%= blurb.title %></td>
-    <td><%= blurb.body %></td>
-    <td><%= link_to 'Show', blurb %></td>
-    <td><%= link_to 'Edit', edit_blurb_path(blurb) %></td>
-    <td><%= link_to 'Destroy', blurb, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
+<%= render :partial => "blurb", :collection => @blurbs %>
 
 <%= link_to 'New Blurb', new_blurb_path %>

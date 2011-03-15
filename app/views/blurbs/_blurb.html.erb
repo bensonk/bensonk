@@ -1,0 +1,10 @@
+<div class="blurb">
+  <h2><%= blurb.title %></h2>
+  <div class="body">
+    <%= textilize(blurb.body).html_safe %>
+  </div>
+  <div class="links">
+    <%= link_to 'Edit', edit_blurb_path(blurb) %> |
+    <%= link_to 'Destroy', blurb, :confirm => 'Are you sure?', :method => :delete %>
+  </div>
+</div>
