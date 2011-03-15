@@ -25,9 +25,13 @@ class ApplicationController < ActionController::Base
 
   def must_be_admin
     unless current_user and current_user.admin?
-      session[:redirect_target] = request.fullpath
-      flash[:error] = "You must be an admin to do that."
-      redirect_to :controller => :sessions, :action => :twitter
+      if current_user
+        flash[:error] = "You must be an admin to do that."
+        redirect_to :controller => :home, :action => :index
+      else
+        session[:redirect_target] = request.fullpath
+        redirect_to :controller => :sessions, :action => :twitter
+      end
     end
   end
 end
