@@ -20,17 +20,17 @@ a {
 }
 a:hover {
   color: #3366bb;
-  text-shadow: -1px 1px 2px #222222;
+  text-shadow: -1px 1px 2px #555555;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  text-shadow: -1px 2px 3px #333333;
+  text-shadow: -1px 2px 3px #999999;
 }
 h1#main {
   font-size: 250%;
   text-align: center;
   clear: both;
-  text-shadow: -1px 1px 5px #333333;
+  text-shadow: -1px 1px 5px #555555;
   margin: 0px 40px;
 }
 div#content {
