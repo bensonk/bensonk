@@ -65,3 +65,4 @@ div#auth, div#nav {
 div#login_options { list-style-type: none; }
 div#notice { float: center; }
 div.blurb { padding: 1em; }
+div.blurb p { color: #555555; }
