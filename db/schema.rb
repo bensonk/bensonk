@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110315000448) do
+ActiveRecord::Schema.define(:version => 20110316085908) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -31,6 +31,15 @@ ActiveRecord::Schema.define(:version => 20110315000448) do
     t.string   "name"
     t.string   "url"
     t.string   "icon_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.boolean  "published"
+    t.integer  "author_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

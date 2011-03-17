@@ -1,4 +1,6 @@
 Bensonk::Application.routes.draw do
+  resources :posts
+
   resources :blurbs
   resources :networks
 
