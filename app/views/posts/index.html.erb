@@ -1,25 +1,13 @@
-<h1>Listing posts</h1>
+<h2>Posts</h2>
 
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th>Published</th>
-    <th>Author</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @posts.each do |post| %>
   <tr>
-    <td><%= post.title %></td>
-    <td><%= post.body %></td>
-    <td><%= post.published %></td>
-    <td><%= post.author_id %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to image_tag("edit.png"), edit_post_path(post) %></td>
+    <td><%= link_to image_tag("remove.png"), post, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= post.published ? image_tag("tick.png") : "" %></td>
+    <td class="wide"><%= link_to post.title, post %></td>
+    <td class="wide"><%= distance_of_time_in_words_to_now post.created_at %> ago</td>
   </tr>
 <% end %>
 </table>

@@ -1,5 +1,10 @@
 <div id="historical_posts">
-  <h2><%= link_to "Blog Posts", :action => "index" %></h2>
+  <h2>
+    <%= link_to "Blog Posts", :action => "index" %>
+    <% if @current_user and @current_user.admin? %>
+      <%= link_to image_tag("page_add.png"), :controller => "posts", :action => "new" %>
+    <% end %>
+  </h2>
   <% historical_posts.each do |month, posts| %>
     <div class="month">
       <h4><%= month %></h4>

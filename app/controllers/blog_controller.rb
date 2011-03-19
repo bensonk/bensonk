@@ -5,7 +5,15 @@ class BlogController < ApplicationController
   end
 
   def post
-    @post = Post.find params[:id]
+    if current_user and current_user.admin?
+      @post = Post.find params[:id]
+    else
+      @post = Post.published.find params[:id]
+    end
+    if not @post
+      flash[:error] = "We couldn't find that post."
+      redirect_to :action => :index
+    end
   end
 
   private
