@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Benson Kalahar</title>
+    <link rel="alternate" type="application/atom+xml" href="<%= url_for :controller => "feeds", :action => "atom", :host => blog_host %>" />
     <%= stylesheet_link_tag "screen.css", :media => "screen and (min-device-width: 961px)" %>
     <%= stylesheet_link_tag "handheld.css", :media => "only screen and (max-device-width: 960px)" %>
     <!--[if IE]>

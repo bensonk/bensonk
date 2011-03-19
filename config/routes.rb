@@ -1,6 +1,7 @@
 Bensonk::Application.routes.draw do
   constraints :subdomain => "blog" do
     resources :posts
+    match "/feeds/atom" => "feeds#atom"
     match '/', :to => 'blog#index'
     match '/:id', :to => 'blog#post', :as => "post"
   end
