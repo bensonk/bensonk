@@ -10,7 +10,7 @@
       <h4><%= month %></h4>
       <ul>
         <% posts.sort_by(&:created_at).reverse.each do |p| %>
-        <li><%= link_to p.title, p %></li>
+        <li><%= link_to p.title, blog_post_url(p) %></li>
         <% end %>
       </ul>
     </div>
