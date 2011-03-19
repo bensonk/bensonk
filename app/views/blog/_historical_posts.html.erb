@@ -1,0 +1,13 @@
+<div id="historical_posts">
+  <h2><%= link_to "Blog Posts", :action => "index" %></h2>
+  <% historical_posts.each do |month, posts| %>
+    <div class="month">
+      <h4><%= month %></h4>
+      <ul>
+        <% posts.sort_by(&:created_at).reverse.each do |p| %>
+        <li><%= link_to p.title, p %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>

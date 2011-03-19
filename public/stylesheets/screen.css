@@ -66,3 +66,28 @@ div#login_options { list-style-type: none; }
 div#notice { float: center; }
 div.blurb { padding: 1em; }
 div.blurb p { color: #555555; }
+.post { width: 75%; }
+.post .metadata {
+  font-size: 0.7em;
+  font-style: italic;
+}
+.post h2 { margin: 1em 0 0.25em 0; }
+#historical_posts {
+  width: 12em;
+  float: right;
+}
+#historical_posts h2 { margin: 0 0 0.75em 0; }
+#historical_posts .month { padding: 0 0 0.75em 0; }
+#historical_posts .month h4 {
+  padding: 0;
+  margin: 0 0 0.75em 0;
+}
+#historical_posts .month ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#historical_posts .month ul li {
+  margin: 0.5em 0;
+  padding: 0;
+}

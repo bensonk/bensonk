@@ -1,4 +1,5 @@
 <div class="post">
-  <h2><%= post.title %></h2>
+  <h2><%= link_to post.title, post %></h2>
+  <div class="metadata">Posted <%= distance_of_time_in_words_to_now post.created_at %> ago</div>
   <div class="body"><%= textilize(post.body).html_safe %></div>
 </div>
