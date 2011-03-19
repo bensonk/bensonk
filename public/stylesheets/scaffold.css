@@ -8,35 +8,7 @@
 
 
 
-*/table { margin: 0 auto; }
-table .wide { padding: 0 1em; }
-body {
-  background-color: #ffffff;
-  color: #333333;
-}
-body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}
-pre {
-  background-color: #eeeeee;
-  padding: 10px;
-  font-size: 11px;
-}
-a { color: #000000; }
-a:visited { color: #666666; }
-a:hover {
-  color: #ffffff;
-  background-color: #000000;
-}
-div.field, div.actions { margin-bottom: 10px; }
-#notice { color: green; }
-.field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
+*/form { margin: 0 2em 0 0; }
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -58,4 +30,8 @@ div.field, div.actions { margin-bottom: 10px; }
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+input, textarea {
+  width: 100%;
+  margin: 1em;
 }

@@ -91,3 +91,5 @@ div.blurb p { color: #555555; }
   margin: 0.5em 0;
   padding: 0;
 }
+table { margin: 0 auto; }
+table .wide { padding: 0 1em; }
