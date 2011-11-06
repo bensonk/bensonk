@@ -10,6 +10,8 @@ gem 'omniauth'
 
 gem 'sqlite3'
 
+gem 'mysql2'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
