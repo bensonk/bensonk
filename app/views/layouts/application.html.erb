@@ -15,6 +15,19 @@
     <%= javascript_include_tag "prettify/prettify" %>
     <%= javascript_include_tag "prettify/auto_prettify" %>
     <%= csrf_meta_tag %>
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f5fb796f5a1f51e830000c7');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
   </head>
   <body>
     <div id="content">

@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
 gem 'less'
-gem 'RedCloth'
+gem 'RedCloth', '4.2.3'
 gem 'omniauth'
 
 # Bundle edge Rails instead:
