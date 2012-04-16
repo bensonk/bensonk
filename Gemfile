@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
-gem 'rack', '1.2.4'
+gem 'rack', '1.2.1'
 gem 'less'
 gem 'RedCloth', '4.2.3'
 gem 'omniauth'
@@ -11,7 +11,7 @@ gem 'omniauth-facebook'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3', '= 1.3.3'
+gem 'sqlite3', '= 1.3.3'
 
 gem 'mysql2', '< 0.3'
 
