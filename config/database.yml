@@ -16,7 +16,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql2
+  adapter: mysql3
   host: mysql.bensonk.net
   database: "bensonk"
   username: bensonk
