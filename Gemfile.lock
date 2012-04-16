@@ -122,7 +122,6 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth (= 4.2.3)
-  less
   less-rails
   mysql2 (>= 0.3)
   omniauth
