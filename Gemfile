@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2'
+gem 'rails', '3.2.3'
 gem 'less'
 gem 'RedCloth', '4.2.3'
 gem 'omniauth'
