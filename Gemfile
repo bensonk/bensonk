@@ -5,6 +5,8 @@ gem 'rack', '1.2.4'
 gem 'less'
 gem 'RedCloth', '4.2.3'
 gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
