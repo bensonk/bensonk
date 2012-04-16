@@ -11,7 +11,7 @@ gem 'omniauth-facebook'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3', '= 1.3.3'
+#gem 'sqlite3', '= 1.3.3'
 
 gem 'mysql2', '< 0.3'
 
