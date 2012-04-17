@@ -2,7 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
 gem 'rack', '1.2.1'
-gem 'less'
 gem 'RedCloth', '4.2.3'
 gem 'omniauth'
 gem 'omniauth-twitter'
